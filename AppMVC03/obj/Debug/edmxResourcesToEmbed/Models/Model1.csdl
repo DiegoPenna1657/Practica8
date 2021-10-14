@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VENTASModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="VENDEDOR">
+    <Key>
+      <PropertyRef Name="CodVendedor" />
+    </Key>
+    <Property Name="CodVendedor" Type="Int32" Nullable="false" />
+    <Property Name="NumeroTelefo" Type="Int32" />
+    <Property Name="Nombre" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="VENTASEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="VENDEDOR" EntityType="Self.VENDEDOR" />
+  </EntityContainer>
+</Schema>
